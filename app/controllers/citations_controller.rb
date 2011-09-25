@@ -2,10 +2,16 @@ class CitationsController < ApplicationController
   respond_to :json
   
   def update
-    respond_with 12331231
+    @citation = Citation.new()
+    @citation.id = params[:id]
+    
+    respond_with @citation
   end
 
   def create
-    respond_with 12331231    
+    @citation = Citation.new()
+    @citation.id = 123132131
+    
+    respond_with @citation
   end
 end

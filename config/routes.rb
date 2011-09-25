@@ -3,6 +3,7 @@ NoodletoolsMock::Application.routes.draw do
     resources :citations
     resources :projects
   end
+  resources :citations
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

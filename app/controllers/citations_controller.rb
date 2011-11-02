@@ -1,17 +1,21 @@
 class CitationsController < ApplicationController
   respond_to :json
   
+  # NOT a POST, whatever
+  def index
+    render :text => '12345'
+  end
+  
   def update
-    @citation = Citation.new()
-    @citation.id = params[:id]
+    # @citation = Citation.new()
+    # @citation.id = params[:id]
+    # 
+    # respond_with @citation
     
-    respond_with @citation
+    render :text => '12345'
   end
 
   def create
-    @citation = Citation.new()
-    @citation.id = 123132131
-    
-    respond_with @citation
+      render :text => '12345'
   end
 end

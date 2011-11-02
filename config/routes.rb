@@ -1,8 +1,5 @@
 NoodletoolsMock::Application.routes.draw do
-  resources :users do
-    resources :citations
-    resources :projects
-  end
+  resources :projects
   resources :citations
 
   # The priority is based upon order of creation:
